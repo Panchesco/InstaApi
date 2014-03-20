@@ -1,2 +1,2 @@
 config/*
-config/!config-sample.php
+!config/config-sample.php
