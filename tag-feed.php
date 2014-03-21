@@ -11,8 +11,20 @@
 <head>
     <meta charset="utf-8">
     <title>Tag Feed for #<?php echo $feed->tag ;?></title>
+    
+    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </head>
 <body>
+	<div class="row">
     <h1>Showing <?php echo $feed->count ;?> of <?php echo $feed->mediaCount(); ?> Items recently tagged #<?php echo $feed->tag ;?></h1>
     <?php if(isset($response->data)) { ?>
     	<?php foreach($response->data as $key=>$row) {?>
@@ -22,5 +34,6 @@
     	</div>
     	<?php } ?>
     <?php } ?>
+	</div>
 </body>
 </html>
