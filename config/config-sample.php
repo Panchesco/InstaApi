@@ -2,6 +2,7 @@
 /** 
  * Current Instagram client settings.
  * More info: http://instagram.com/developer/
+ * Add your credentials and resave this file as config.php.
  */
  
 $config['client_id']		= '';
